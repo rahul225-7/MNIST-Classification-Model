@@ -37,4 +37,21 @@ This performance qualified us as **finalists** in the competition.
 
 ---
 
+## Dataset – MNIST
+
+> **MNIST (Modified National Institute of Standards and Technology)** is a classic benchmark dataset in machine learning and deep learning.
+
+- Contains **70,000 grayscale images** of handwritten digits (0–9)
+  - **60,000** for training
+  - **10,000** for testing
+- Each image is **28x28 pixels**, flattened into a vector of **784 features**
+- Labels range from **0 to 9**, one-hot encoded for training
+- Dataset was preprocessed using:
+  - Normalization (pixel values scaled between 0 and 1)
+  - Shuffled and batched manually for training
+
+We used the version available through `jax.example_libraries` and manually handled preprocessing to meet the low-level constraint rules of TensorCraft.
+
+---
+
 
